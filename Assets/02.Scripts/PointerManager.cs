@@ -5,14 +5,18 @@ using Microsoft.MixedReality.Toolkit.Input;
 
 public class PointerManager : MonoBehaviour, IMixedRealityFocusHandler, IMixedRealityPointerHandler
 {
+    private bool isRotate = false;
+
     public void OnFocusEnter(FocusEventData eventData)
     {
         Debug.Log("OnFocusEnter");
+        isRotate = true;
     }
 
     public void OnFocusExit(FocusEventData eventData)
     {
         Debug.Log("OnFocusExit");
+        isRotate = false;
     }
 
     public void OnPointerClicked(MixedRealityPointerEventData eventData)
@@ -36,8 +40,6 @@ public class PointerManager : MonoBehaviour, IMixedRealityFocusHandler, IMixedRe
     }
 
 
-
-
     // Start is called before the first frame update
     void Start()
     {
@@ -47,6 +49,9 @@ public class PointerManager : MonoBehaviour, IMixedRealityFocusHandler, IMixedRe
     // Update is called once per frame
     void Update()
     {
-        
+        if (isRotate)
+        {
+            transform.Rotate(Transform.up * Time.deltaTime * 50.0f);
+        }
     }
 }
