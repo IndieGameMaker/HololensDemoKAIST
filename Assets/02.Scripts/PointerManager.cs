@@ -7,6 +7,11 @@ public class PointerManager : MonoBehaviour, IMixedRealityFocusHandler, IMixedRe
 {
     private bool isRotate = false;
 
+    public void OnRotateClick()
+    {
+        isRotate = !isRotate;
+    }
+
     public void OnFocusEnter(FocusEventData eventData)
     {
         Debug.Log("OnFocusEnter");
@@ -51,7 +56,7 @@ public class PointerManager : MonoBehaviour, IMixedRealityFocusHandler, IMixedRe
     {
         if (isRotate)
         {
-            transform.Rotate(Transform.up * Time.deltaTime * 50.0f);
+            transform.Rotate(transform.up * Time.deltaTime * 50.0f);
         }
     }
 }
