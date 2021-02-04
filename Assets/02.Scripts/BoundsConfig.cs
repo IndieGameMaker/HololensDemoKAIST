@@ -30,5 +30,11 @@ public class BoundsConfig : MonoBehaviour
         boundsControl.BoundsControlActivation = activationType;
         boundsControl.RotationHandlesConfig.HandleSize = rotateHandleSize;
         boundsControl.ScaleHandlesConfig.HandleSize    = scaleHandleSize;
+
+        //머티리얼 속성 연결
+        boundsControl.BoxDisplayConfig.BoxMaterial         = Resources.Load<Material>($"Materials/{boxMat}");
+        boundsControl.BoxDisplayConfig.BoxGrabbedMaterial  = Resources.Load<Material>($"Materils/{boxGrabMat}");
+        boundsControl.ScaleHandlesConfig.HandleMaterial    = Resources.Load<Material>($"Material/{handleMat}");
+        boundsControl.RotationHandlesConfig.HandleMaterial = Resources.Load<Material>($"Material/{handleMat}");
     }
 }
