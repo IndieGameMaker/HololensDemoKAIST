@@ -216,6 +216,19 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 466529580}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &127145522
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 127145516}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.25, y: 0.25, z: 0.25}
+  m_Center: {x: 0, y: 0.125, z: 0}
 --- !u!1001 &466529580
 PrefabInstance:
   m_ObjectHideFlags: 0

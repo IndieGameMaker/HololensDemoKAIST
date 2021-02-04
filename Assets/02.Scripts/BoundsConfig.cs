@@ -15,6 +15,11 @@ public class BoundsConfig : MonoBehaviour
 
     private BoundsControl boundsControl;
 
+    //머티리얼 설정
+    private readonly string boxMat      = "BoundingBox";
+    private readonly string boxGrabMat  = "BoundingBoxGrabbed";
+    private readonly string handleMat   = "BoundingBoxHandleBlue";
+
     // Start is called before the first frame update
     void Start()
     {
