@@ -33,8 +33,8 @@ public class BoundsConfig : MonoBehaviour
 
         //머티리얼 속성 연결
         boundsControl.BoxDisplayConfig.BoxMaterial         = Resources.Load<Material>($"Materials/{boxMat}");
-        boundsControl.BoxDisplayConfig.BoxGrabbedMaterial  = Resources.Load<Material>($"Materils/{boxGrabMat}");
-        boundsControl.ScaleHandlesConfig.HandleMaterial    = Resources.Load<Material>($"Material/{handleMat}");
-        boundsControl.RotationHandlesConfig.HandleMaterial = Resources.Load<Material>($"Material/{handleMat}");
+        boundsControl.BoxDisplayConfig.BoxGrabbedMaterial  = Resources.Load<Material>($"Materials/{boxGrabMat}");
+        boundsControl.ScaleHandlesConfig.HandleMaterial    = Resources.Load<Material>($"Materials/{handleMat}");
+        boundsControl.RotationHandlesConfig.HandleMaterial = Resources.Load<Material>($"Materials/{handleMat}");
     }
 }
